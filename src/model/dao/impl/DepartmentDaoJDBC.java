@@ -86,7 +86,7 @@ public class DepartmentDaoJDBC implements DepartmentDao {
         PreparedStatement st = null;
 
         try {
-            st = conn.prepareStatement("DELETE FROM seller WHERE Id = ?");
+            st = conn.prepareStatement("DELETE FROM department WHERE Id = ?");
 
             st.setInt(1, id);
 
